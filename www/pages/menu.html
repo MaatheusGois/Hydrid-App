@@ -6,42 +6,17 @@
       </div>
     </div>
 
-    <div class="page-content fg" id="ti">
+    <div class="page-content">
 
     </div>
 </template>
-<style>
-  .demo-card-header-pic .card-header {
-    height: 40vw;
-    background-size: cover;
-    background-position: center;
-    color: #fff;
-  }
 
-  .demo-card-header-pic .centered {
-    padding-left: 42%;
-  }
-</style>
 <script>
   return {
-    data: function () {
-      return { titulo: 'Menu', nomeDeUsuario: this.$app.data.username }
-    },
-    methods: {
-      confirmaSair: function () {
-        var $ = this.$;
-        var app = this.$app;
-        var router = this.$router;
-        app.dialog.confirm('Tem certesa que deseja sair?', function () {
-          app.dialog.alert('Até logo!');
-          // TODO: User Logout
-          app.popover.close('.popover-links');
-          router.navigate('/index/');
-        });
-      },
-      BTNprofile: function () {
-        app.popover.close('.popover-links');
-      }
+    data: function () { },
+    methods: { },
+    on: {
+      pageInit: function () { }
     }
   }
 </script>

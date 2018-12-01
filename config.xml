@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="com.phonegap.helloworld" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
-    <name>Fono App Test</name>
+    <name>Hack</name>
     <description>
-        Aplicação desenvolvida para ajudar cuidadores e responsaveis a identificarem problemas de fala e audicao em criancas de ate 5 anos.
+        Teste.
     </description>
-    <author email="mackleaps@gmail.com" href="http://mackleaps.mackenzie.br/">
-        MackLeaps
+    <author email="matheusgoislimasilva@gmail.com" href="https://github.com/MaatheusGois/">
+        Matheus Gois
     </author>
     <content src="index.html" />
     <preference name="DisallowOverscroll" value="true" />

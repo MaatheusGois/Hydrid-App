@@ -2,19 +2,76 @@
   <div class="page no-swipeback">
     <div class="navbar">
       <div class="navbar-inner sliding nav">
-        <div class="title" style="color:#fff;">Grupos</div>
+        <div class="right">
+          <a class="link popover-open"  href="#" data-popover=".popover-links"><i class="f7-icons color-c-white">person_round</i></a>
+        </div>
+        <div class="title" style="color:#fff;">Menu</div>
       </div>
     </div>
 
-    <div class="page-content">
+    <div class="page-content fg" id="ti">
+      <div>
+        <h1 class="text-align-center">50RS</h1>
+        <a href="/warnings/">
+          <div class="block">
+            <p> M1</p>
+          </div>
+        </a>
+        <a href="/warnings/">
+          <div class="block">
+            <p> M2</p>
+          </div>
+        </a>
+        <a href="/warnings/">
+          <div class="block">
+            <p> M3
+            </p>
+          </div>
+        </a>
+      </div>
+
+
+
+
+      <div class="popover popover-links">
+        <div class="popover-inner">
+          <div class="list">
+            <ul>
+                <li><a class="list-button"  href="#"  @click="test">Menu</a></li>
+              <li><a class="list-button" @click="perfil"  href="#" >Perfil</a></li>
+              <li><a class="list-button item-link" @click="sair">Sair</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
 
     </div>
+  </div>
 </template>
+<style>
 
+</style>
 <script>
   return {
     data: function () { },
-    methods: { },
+    methods: {
+      sair: function () {
+        console.log('sair');
+        
+        app.popover.close('.popover-links');
+        //app.dialog.confirm('Tem certesa que deseja sair?', 'Sair', function () {
+          //});
+         app.router.navigate('/login/');
+      },
+      perfil: function () {
+        console.log('here');
+        app.popover.close('.popover-links');
+        app.router.navigate('/perfil/');
+      },
+      test: function(){
+        console.log('>>>');
+      }
+    },
     on: {
       pageInit: function () { }
     }

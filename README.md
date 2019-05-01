@@ -1,3 +1,3 @@
 # Hydrid-App
 
-Código para introduzir alunos ao conseito de Aplicativo Hibrido, com o intuito de difundir o conhecimento em programação.
+Code to introduce students to the concept of Hybrid Application, in order to spread knowledge in programming.
